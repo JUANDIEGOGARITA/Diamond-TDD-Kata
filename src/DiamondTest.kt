@@ -10,4 +10,11 @@ class DiamondTest {
 
         assertThat(diamond[0], `is`("A"))
     }
+
+    @Test
+    fun `have one dash on each side of A when up to B`() {
+        val diamond = Diamond.upTo('B')
+
+        assertThat(diamond[0], `is`("-A-"))
+    }
 }
